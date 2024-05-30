@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .pos1 {
+            top: 50px;
+            z-index: 4;
+        }
+
+        .pos2 {
+            top: 100px;
+            z-index: 3;
+        }
+
+        .pos3 {
+            top: 150px;
+            z-index: 2;
+        }
+
+        .pos4 {
+            top: 200px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="circle pos1"></div>
+        <div class="circle pos2"></div>
+        <div class="circle pos3"></div>
+        <div class="circle pos4"></div>
+    </div>
+
+</body>
+
+</html>
